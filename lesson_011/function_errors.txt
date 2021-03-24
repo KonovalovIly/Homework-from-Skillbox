@@ -1,0 +1,5 @@
+
+(<function check_line at 0x00000275F8B2B9D0>, ValueError('Age not in 10..99 range'))
+(<function check_line at 0x00000275F8B2B9D0>, ValueError("it's not a email"))
+(<function check_line at 0x00000275F8B2B9D0>, ValueError('not enough values to unpack (expected 3, got 2)'))
+(<function perky at 0x00000275F8B2B8B0>, ZeroDivisionError('division by zero'))
