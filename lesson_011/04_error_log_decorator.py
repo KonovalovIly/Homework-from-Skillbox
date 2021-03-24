@@ -13,8 +13,10 @@ def log_errors(func):
         try:
             return func(*args, **kwargs)
         except Exception as exc:
-            file_error = open('function_errors.txt', 'a')
-            file_error.write(f'{func, exc}\n')
+            with open('function_errors.txt', mode='a', encoding='utf8') as write_file_wrong:
+                content_log = f'{func.__name__} -> {type(exc).__name__}, {args}, {kwargs}, {exc}\n'
+                write_file_wrong.write(content_log)
+
     return check_error
 
 
